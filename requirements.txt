@@ -21,3 +21,9 @@ pillow
 opencv-python
 camelot-py[cv]
 ghostscript
+anthropic
+ragas
+datasets
+rouge-score
+ranx
+evaluate

@@ -5,7 +5,11 @@ logger = get_logger("Reranker")
 
 
 class Reranker:
-    def __init__(self, model="cross-encoder/ms-marco-MiniLM-L-6-v2"):
+    
+    # def __init__(self, model="cross-encoder/ms-marco-MiniLM-L-6-v2"):
+    #     self.model = CrossEncoder(model)
+    
+    def __init__(self, model="BAAI/bge-reranker-large"):
         self.model = CrossEncoder(model)
 
     def rerank(self, query, docs, top_k=5):
